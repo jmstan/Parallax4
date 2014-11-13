@@ -17,20 +17,21 @@
        <script src="{{site.url}}js/_main.js"/></script>
        <script src="{{site.url}}js/skrollr.js" /></script>   -->
 
-     
+         <script type="text/javascript">
+          skrollr.init({
+          smoothScrolling: false,
+          mobileDeceleration: 0.004
+          });
+        </script>
+         <script type="text/javascript" src="{{site.url}}js/skrollr.js"></script>   
+     <script type="text/javascript" src="{{site.url}}js/skrollr.min.js"></script>
+
       
        <script src="https://get.gridsetapp.com/31380/overlay/">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-    <script type="text/javascript" src="{{site.url}}js/skrollr.js"></script>   
-     <script type="text/javascript" src="{{site.url}}js/skrollr.min.js"></script>  
-      <script type="text/javascript">
-        skrollr.init({
-        smoothScrolling: false,
-        mobileDeceleration: 0.004
-        });
-      </script>
-
+     
+  
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
