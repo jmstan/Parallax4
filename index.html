@@ -19,13 +19,121 @@ layout: default
 
 
        
-        <link rel="stylesheet" href="{{site.url}}css/classic.css">
-        <link rel="stylesheet" href="{{site.url}}css/styles.css">
+  <!--      <link rel="stylesheet" href="{{site.url}}css/classic.css">   -->
+  <!--      <link rel="stylesheet" href="{{site.url}}css/styles.css">   -->
         <link rel="stylesheet" href="{{site.url}}css/normalize.css">
      
         <script src="//use.typekit.net/jdd3nyb.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      
+
+      <style type="text/css">
+  * {
+    padding:0;
+    margin:0;
+  }
+
+  html, body {
+    height:100%;
+  }
+
+  .skrollr-desktop body {
+    height:100% !important;
+  }
+
+  body {
+    font-family:sans-serif;
+  }
+
+  p {
+    margin:1em 0;
+  }
+
+  .parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+  }
+
+  .parallax-image-wrapper-50 {
+    height:50%;
+    top:-50%;
+  }
+
+  .parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
+  }
+
+  .parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+  }
+
+  .parallax-image-50 {
+    height:200%;
+    top:-50%;
+  }
+
+  .parallax-image-100 {
+    height:100%;
+    top:0;
+  }
+
+  .parallax-image.skrollable-between {
+    display:block;
+  }
+
+  .no-skrollr .parallax-image-wrapper {
+    display:none !important;
+  }
+
+  #skrollr-body {
+    height:100%;
+    overflow:visible;
+    position:relative;
+  }
+
+  .gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+  }
+
+  .skrollr .gap {
+    background:transparent !important;
+  }
+
+  .gap-50 {
+    height:50%;
+  }
+
+  .gap-100 {
+    height:100%;
+  }
+
+  .header, .content {
+    background:#fff;
+    padding:1em;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+
+  .content-full {
+    height:100%;
+  }
+
+  #done {
+    height:100%;
+  }
 
     </head>
     
@@ -157,14 +265,14 @@ layout: default
   
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+   <!--     <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script>   -->
 </body>
 
 </html>
