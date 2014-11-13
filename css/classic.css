@@ -90,7 +90,7 @@
 
 	.header, .content {
 		background:#fff;
-		padding:1em;
+	/*	padding:1em;  */
 
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
